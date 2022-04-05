@@ -7,10 +7,12 @@ network by using discrete-time simulation method. We assume an isolated network 
 100,000) IP address space which means the IP range in our network ranges from 1 to 100,000. It is 
 assumed that there are N = 1,000 computers that are vulnerable to the worm in this isolated network. 
 The IP addresses of the vulnerable computer has the following pattern of IP addresses: 
+
 1, 2, 3,. . . , 10, 
 10001, 10002, . . . ., 10100, 
 20001, 20002, . . . , 20100
 ....
+
 From this we can see that, each cluster of 100 computers with the consecutive IPs are vulnerable to the 
 worm, and in every 1000 consecutive IP addresses there will be one cluster of 100 vulnerable computers 
 (so there are 10 clusters of vulnerable computers overall). We further assume that worm starts to 
