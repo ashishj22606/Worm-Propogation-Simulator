@@ -24,24 +24,32 @@ time step. In this way the worm propagates and infect the whole computer in a ne
 
 
 2 Implementation 
+
 We need to find the number of infected computers at each time step t(t=1,2,3...) which is represented 
 as I(t). We simulate the worm propagation 3 times to get the three vector of the number of infected IP, 
 I(t). The simulation ends when all the vulnerable machines are infected. At initial point, I(0) = 1. I have 
 implemented simulation of two kinds of scanning:
 
 1) Random Scanning
+
 Here I infect IP’s based on random function output and infect it if it is vulnerable
 
 2) Sequential Scanning
+
 Here I infect IP's in sequence and see no of time ticks it takes to infect all the vulnerable IP's. Here we make sequential access based on initial infected IP and probability of 80%. If probalility is 20% than we do random scanning and begin infecting ips in its order.
 
 Order in which we infect IP's is based on the below equation:
 num_of_ips_to_scan = num_of_infected_ip * SCAN_RATE
 
 3. Output:
+
 Simulation method of worm propagation
+
               Run1 Run2 Run3
+              
 Random_scan   281 320 257
+
 Sequential    218 423 219
+
 Table to show the time steps required to infect all the vulnerable computers in the network
 
