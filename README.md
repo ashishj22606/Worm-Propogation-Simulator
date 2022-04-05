@@ -1,6 +1,7 @@
 # Worm-Propogation-Simulator
 
 1 Design 
+
 In this assignment, I have implemented the simulation of simple worm propagation in a medium-scale 
 network by using discrete-time simulation method. We assume an isolated network with omega(Ω = 
 100,000) IP address space which means the IP range in our network ranges from 1 to 100,000. It is 
